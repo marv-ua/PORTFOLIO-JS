@@ -1,6 +1,7 @@
 const tabButtons = document.querySelectorAll('.design-list__item');
 const tabDescriptions = document.querySelectorAll('.design__descr');
 const tabImages = document.querySelectorAll('.design-images');
+const tabFeatureImages = document.querySelectorAll('.feature__img');
 
 const changeContent = (array, value) => {
     array.forEach((elem) => {
@@ -19,6 +20,9 @@ tabButtons.forEach((tabButton) => {
 
         changeContent(tabDescriptions, dataValue)
         changeContent(tabImages, dataValue)
+        changeContent(tabFeatureImages, dataValue)
+
+        document.title = tabButton.textContent;
 
         tabButtons.forEach((btn) => {
             if (btn === event.target) {
