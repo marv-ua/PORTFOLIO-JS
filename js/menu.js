@@ -3,7 +3,7 @@ const menu = document.querySelector('.menu');
 const menuLinks = menu.querySelectorAll('.menu-list__item');
 
 burger.addEventListener('click', () => {
-    menu.classList.add('menu-active');
+    menu.classList.toggle('menu-active');
 
 })
 
